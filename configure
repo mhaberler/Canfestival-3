@@ -83,7 +83,7 @@ CC2=cc
 SUB_PREFIX=
 
 # Used for C compiler test/detection
-CFLAGS=
+CFLAGS="-g -O0"
 test=conftest
 rm -f $test $test.c
 
