@@ -57,7 +57,7 @@ PROGDEFINES = -mnoshort -Wall -Wmissing-prototypes -fno-strict-aliasing
 endif
 
 ifeq ($(TARGET),unix)
-OPT_CFLAGS = -O2
+OPT_CFLAGS = -O2 -g
 endif
 
 # # # # Options # # # #

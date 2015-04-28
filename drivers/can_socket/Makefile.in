@@ -22,7 +22,7 @@
 # 
 
 CC = SUB_CC
-OPT_CFLAGS = -O2
+OPT_CFLAGS = -O2 -g
 CFLAGS = SUB_OPT_CFLAGS
 PROG_CFLAGS = SUB_PROG_CFLAGS
 PREFIX = SUB_PREFIX
@@ -58,7 +58,7 @@ libcanfestival_$(CAN_DRIVER).so: $(OBJS)
 install: libcanfestival_$(CAN_DRIVER).so
 	mkdir -p $(DESTDIR)$(PREFIX)/lib/
 	cp $< $(DESTDIR)$(PREFIX)/lib/
-	
+
 uninstall:
 	rm -f $(TARGET_SOFILES)
 
