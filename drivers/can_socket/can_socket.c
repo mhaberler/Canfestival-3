@@ -30,7 +30,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 #ifdef RTCAN_SOCKET
 #include "rtdm/rtcan.h"
-#define CAN_IFNAME     "rtcan%s"
+#define CAN_IFNAME     "%s"
 #define CAN_SOCKET     rt_dev_socket
 #define CAN_CLOSE      rt_dev_close
 #define CAN_RECV       rt_dev_recv
@@ -53,7 +53,8 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #define AF_CAN PF_CAN
 #endif
 //#include "af_can.h"
-#define CAN_IFNAME     "can%s"
+#define CAN_IFNAME     "%s"
+//#define CAN_IFNAME     "can%s"
 #define CAN_SOCKET     socket
 #define CAN_CLOSE      close
 #define CAN_RECV       recv
